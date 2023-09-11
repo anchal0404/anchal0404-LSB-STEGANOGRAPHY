@@ -1,1 +1,67 @@
 # anchal0404-LSB-STEGANOGRAPHY
+
+DOCUMENTATION OF THE PROJECT 
+
+<--------------------------------------------------LSB IMAGE STEGANOGRAPHY--------------------------------------->
+
+
+
+$-Steganography is the practice of hiding secret information within another non-secret medium, such as an image, 
+audio file, or text, without the knowledge of third parties.
+
+$-Understanding LSB Steganography:
+LSB steganography involves replacing the least significant bit(s) of each pixel in an image with the bits of the 
+secret message.
+
+$-Steps for LSB Image Steganography:
+
+->Select an image (cover image) in which you want to hide the secret message.
+->Convert the secret message into binary format.
+->Iterate through the pixels of the cover image and replace the LSBs of each pixel with the corresponding bits 
+from the binary message.
+->Ensure that the message does not distort the image significantly, and the changes are not noticeable to the
+ human eye.
+->Save the modified image as the stego image.
+
+$-APPLICATION OF LSB STEGANOGRAPHY
+
+->Military 
+->Intelligence
+->Digital elections
+->Digital Water marking
+->Data Hiding
+->Forensics
+->Medical Informations
+
+FILES:
+
+1)test_encode.c
+Contains Main function of the whole project.
+Working:
+Check operation encoding or decoding
+Perform operation according to input.
+
+2)encode.h
+Contains all function declaration of encoding.
+Also contain structure for encoding algorithm.
+
+3)encode.c
+Contains all the function definitions of encoding algorithm.
+
+4)common.h
+Contains magic string.
+
+5)types.h
+Contains enum to be using in functions.
+
+6)decode.h
+Contains all the function declaration used for decoding.
+
+7)decode.c
+Contains all the function definition user for decoding algorithm.
+
+8)beautiful.bmp
+Image file file in which data needs to be encode.
+
+9)secret.txt
+Contains secret string to be encode.
